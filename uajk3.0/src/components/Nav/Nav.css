@@ -1,0 +1,220 @@
+.nav-wrapper {
+    position: relative;
+    width: 100vw;
+}
+
+.nav-wrapper > nav {
+    height: 13vh;
+}
+
+#menu {
+    position: fixed;
+    right: -41%;
+    top: 0;
+    height: 100vh;
+    width: 40%;
+    background: #000000aa;
+    backdrop-filter: blur(10px);
+    padding: 8vw 3vw;
+    z-index: 21; 
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px);
+    z-index: 20; 
+    display: none;
+    opacity: 0;
+}
+
+.menu-icon {
+    position: relative;
+    z-index: 22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 2.5rem !important;
+    background-color: var(--secondary-color);
+    transition: background-color 0.5s ease;
+}
+
+.menu-icon.open {
+    background-color: var(--neutral-color);
+}
+
+.menu-icon > span {
+    width: 35%;
+    top: 50%;
+    height: 1px;
+    background-color: var(--neutral-color);
+    position: absolute;
+}
+
+.menu-icon > span:first-child {
+    transform: translateY(-5px);
+    transition: transform 0.5s ease;
+}
+
+.menu-icon > span:last-child {
+    transform: translateY(5px);
+    transition: transform 0.5s ease;
+}
+
+.menu-icon.open > span:first-child {
+    height: 2px;
+    background: var(--secondary-color);
+    transform: translateY(0) rotate(45deg);
+    transition: all 0.5s ease;
+}
+
+.menu-icon.open > span:last-child {
+    height: 2px;
+    background: var(--secondary-color);
+    transform: translateY(0) rotate(-45deg);
+    transition: all 0.5s ease;
+}
+
+#menu > .menu-link {
+    position: relative;
+    z-index: 20;
+    margin-bottom: .5rem;
+}
+
+.menu-link > a {
+    text-decoration: none;
+    color: var(--neutral-color);
+    font-family: a;
+    font-weight: 100;
+    font-size: 3vw;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.menu-link:hover a {
+    color: var(--primary-color);
+}
+
+#menu-social {
+    position: absolute;
+    bottom: 5rem;
+    display: flex;
+    width: calc(100% - 6rem);
+    justify-content: start;
+}
+
+.social-links::before {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: var(--neutral-color);
+    position: absolute;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.social-links:hover::before {
+    transform: scaleX(1);
+}
+
+.social-links {
+    position: relative;
+    text-decoration: none;
+    color: var(--neutral-color);
+    font-size: 1.6rem;
+    font-family: a;
+    margin-right: 3rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+    background-color: var(--secondary-color);
+    position: relative;
+    z-index: 5;
+}
+
+.nav-logo > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-logo-img {
+    padding: 1rem;
+    width: 120px;
+}
+
+.nav-title {
+    color: var(--neutral-color);
+    font-family: b;
+    font-size: 1.2rem;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btns button {
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    background-color: transparent;
+    border: 1px solid var(--neutral-color);
+    color: var(--neutral-color);
+    cursor: pointer;
+    font-family: a;
+    font-size: 1.2rem;
+}
+
+.nav-tour {
+    position: relative;
+    overflow: hidden;
+    padding: 1.2rem 3rem;
+    border: none;
+    border-radius: 9999px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-title {
+        display: none;
+    }
+    .nav-tour {
+        display: none;
+    }
+    .menu-icon {
+        padding: 1.2rem 2rem !important;
+    }
+
+    #menu {
+        width: 100%;
+        right: -101%;
+        padding: 20vw 10vw;
+    }
+
+    #menu > .menu-link {
+        margin-bottom: 1rem;
+    }
+    .menu-link > a {
+        font-size: 8vw;
+    }
+    .social-links {
+        font-size: 4.5vw;
+        margin-right: 7vw;
+    }
+}

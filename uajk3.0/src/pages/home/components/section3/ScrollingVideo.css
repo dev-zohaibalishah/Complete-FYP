@@ -1,0 +1,21 @@
+#section3 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden; 
+}
+
+#section3 canvas {
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute; 
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+  #section3{
+      display: none;
+  }
+}

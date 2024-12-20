@@ -1,0 +1,78 @@
+#section7 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  }
+  
+  #section7 > canvas {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  
+  .section7-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    height: 25vw;
+    width: 25vw;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .section7-circle-inner {
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+  
+  .section7-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 20;
+    font-family: a;
+  }
+  
+  .section7-content > h2 {
+    font-size: 3rem;
+  }
+  
+  .section7-content > h4 {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+  
+  .section7-gap {
+    height: 1rem;
+  }
+  
+
+
+  
+
+@media only screen and (max-width: 600px) {
+  .section7-circle{
+    height: 50vw;
+    width: 50vw;
+  }
+  .section7-content h2{
+    font-size: 1.5rem;
+  }
+  .section7-content h4{
+    font-size: 1.1rem;
+  }
+  .section7-gap{
+    height: 0.1rem;
+  }
+}

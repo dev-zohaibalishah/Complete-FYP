@@ -1,0 +1,146 @@
+#section14a {
+    height: 55vh;
+    width: 100vw;
+    background-color: var(--secondary-color);
+    color: var(--neutral-color);
+    font-family: a;
+    padding: 7rem 10rem;
+    position: relative;
+  }
+  
+  #section14a > h1 {
+    font-size: 7rem;
+    font-weight: 100;
+    line-height: 1;
+  }
+  
+  #section14a button {
+    position: relative;
+    overflow: hidden;
+    padding: 1.2rem 3rem;
+    margin-top: 3rem;
+    border: none;
+    border-radius: 9999px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  #section14a button::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: 'Apply Now';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: var(--neutral-color);
+    color: var(--primary-color);
+    transition: top 0.3s ease;
+    z-index: 0;
+  }
+  
+  #section14a button:hover::before {
+    top: 0;
+  }
+  
+  /* Social Links Section */
+  
+  #section14b {
+    position: relative;
+    height: 65vh;
+    width: 100vw;
+    background-color: #0f0f17;
+  }
+  
+  .section14b-inner {
+    position: relative;
+    height: 25%;
+    width: 100%;
+    background-color: #0f0f17;
+    color: var(--neutral-color);
+    font-family: a;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+    border-top: 0.1px solid #4f4f4f;
+    border-bottom: 0.1px solid #4f4f4f;
+  }
+  
+  .section14b-hover {
+    position: absolute;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background-color: var(--primary-color);
+    transition: all 0.5s ease;
+  }
+  
+  .section14b-inner:hover .section14b-hover {
+    height: 100%;
+  }
+  
+  .section14b-inner > img {
+    width: 3.5rem;
+    transform: rotate(-90deg);
+    transition: transform 0.5s ease;
+  }
+  
+  .section14b-inner:hover img {
+    transform: rotate(-45deg);
+  }
+  
+  .section14b-inner > h1 {
+    font-size: 3rem;
+    font-weight: 100;
+    z-index: 4;
+  }
+  
+
+
+  
+
+@media only screen and (max-width: 1367px) {
+  #section14a{
+    padding: 4rem 6rem;
+    height: 50vh;
+  }
+  #section14a>h1{
+    font-size: 5rem;
+  }
+  .section14b-inner{
+    padding: 0 6rem;
+  }
+}
+
+
+  
+
+@media only screen and (max-width: 600px) {
+  #section14a{
+    padding: 3rem;
+    height: 40vh;
+  }
+  #section14a>h1{
+    font-size: 3.5rem;
+  }
+  #section14b{
+    height: 45vh;
+  }
+  .section14b-inner{
+    padding: 0 3rem;
+  }
+  .section14b-inner h1{
+    font-size: 2rem;
+  }
+  .section14b-inner img{
+    width: 2.5rem;
+  }
+}

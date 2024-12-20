@@ -1,0 +1,29 @@
+.hero-banner{
+    width: 100vw;
+    height: 60vh;
+    background-image: url("/assets/1.jpg");
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content{
+    width: 35vw;
+    margin-left: 10rem;
+}
+
+.hero-content h4{
+    color: #fff;
+    font-family: a;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.hero-content h2{
+    color: #fff;
+    font-family: a;
+    font-weight: 100;
+    font-size: 5rem;
+}

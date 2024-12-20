@@ -1,0 +1,88 @@
+.event {
+    width: 100vw;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .event-title {
+    width: 80%;
+    text-align: center;
+    font-family: a;
+    font-weight: 100;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    color: var(--neutral-color);
+  }
+
+  .event-content{
+    width: 100%;
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .event-text {
+    width: 80%;
+    font-family: a;
+    font-weight: 100;
+    font-size: 1.8rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+    color: var(--neutral-color);
+  }
+  
+  .gallery-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .event-gallery {
+    display: flex;
+    overflow-x: hidden;
+    width: 95%;
+    scroll-behavior: smooth;
+    margin-bottom: 5rem;
+  }
+  
+  .gallery-image {
+    min-width: 25%; /* Show 4 images in a row */
+    padding: 1rem;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .scroll-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--neutral-color);
+    cursor: pointer;
+    /* padding: 0.5rem; */
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: -10%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 1.5rem;
+    border-radius: 9999px;
+  }
+  
+  .scroll-button.left {
+    right: 170px;
+  }
+  
+  .scroll-button.right {
+    right: 100px;
+  }
+  
+  .scroll-button:focus {
+    outline: none;
+  }
+  

@@ -1,0 +1,11 @@
+express: For setting up the server.
+mongoose: To interact with MongoDB.
+bcryptjs: For hashing passwords.
+jsonwebtoken: To generate and verify tokens.
+dotenv: To manage environment variables.
+cors: To handle cross-origin requests.
+bcrypt: To hash the passwords
+multer: To handle file upload
+
+Front end:
+spline: To connect the 3d model canvas.

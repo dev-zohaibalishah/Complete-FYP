@@ -1,0 +1,119 @@
+.signup-container{
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-form-container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.signup-center{
+    width: 50vw;
+    background-color: #000000aa;
+    backdrop-filter: blur(10px);
+    padding: 2rem 10rem 6rem;
+    margin: 5rem 0;
+    border-radius: 20px;
+}
+
+.signup-form{
+    width: 100%;
+    row-gap: 2rem;
+}
+
+.signup-heading{
+    color: var(--neutral-color);
+    font-family: a;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.signup-input{
+    display: flex;
+    flex-direction: column;
+    margin: 1.7rem 0rem;
+}
+
+.signup-input label{
+    color: var(--neutral-color);
+    font-family: a;
+    letter-spacing: 0.7px;
+    font-size: 1.2rem;
+}
+
+.signup-input input{
+    border: 1px solid #dadada69;
+    border-radius: 10px;
+    padding: 0.7rem;
+    background-color: #dadada80;
+}
+
+.signup-input input::placeholder{
+    font-family: c;
+    letter-spacing: 0.5px;
+    color: var(--neutral-color);
+}
+
+.signup-admin{
+    margin-right: 1rem;
+}
+
+
+.signup-btn{
+    text-align: center;
+}
+    
+.signup-btn button {
+    position: relative;
+    width: 12vw;
+    height: 3.5rem;
+    overflow: hidden;
+    padding: 1.2rem 3rem;
+    border: none;
+    border-radius: 9999px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 10;
+}
+
+.signup-btn span{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--neutral-color);
+    z-index: 20;
+    transition: color 0.3s ease;
+}
+
+.signup-btn button::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: var(--neutral-color);
+    transition: top 0.3s ease;
+    z-index: 0;
+}
+
+.signup-btn button:hover::before {
+    top: 0;
+}
+
+.signup-btn button:hover span{
+    color: var(--secondary-color);
+}
+

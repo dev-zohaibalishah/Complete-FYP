@@ -1,0 +1,77 @@
+.student-dashboard-container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    color: var(--neutral-color);
+    font-family: a;
+}
+
+.student-dashboard{
+    width: 60vw;
+    padding: 5rem 0;
+}
+
+.student-heading{
+    font-family: a;
+    color: var(--neutral-color);
+    font-weight: 100;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.student-data{
+    background-color: #000000aa;
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    padding: 5rem 5rem 7rem;
+}
+
+.student-main-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0 3rem;
+}
+
+.student-profile-photo{
+    width: 50%;
+}
+
+.student-name{
+    width: 50%;
+}
+
+.student-name>p:first-child{
+    font-size: 1.8rem;
+}
+
+.student-name>p:last-child{
+    font-size: 5rem;
+}
+
+.student-photo{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 9999px;
+
+}
+
+.student-data-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.student-data-field>p:first-child{
+    width: 50%;
+    font-size: 1.8rem;
+}
+
+.student-data-field>p:last-child{
+    width: 50%;
+    font-size: 1.8rem;
+}

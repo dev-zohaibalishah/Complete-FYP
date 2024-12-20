@@ -1,0 +1,19 @@
+#main{
+    position: relative;
+    overflow: hidden;
+    /* overflow-x: hidden; */
+    background: #0b48ed;
+    /* scroll-behavior: smooth; */
+}
+
+/* Locomotive css */
+/* 
+html, body {
+    height: 100%;
+  }
+  
+  
+  [data-scroll-container] {
+    overflow: hidden;
+  }
+   */

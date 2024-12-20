@@ -1,0 +1,97 @@
+.quick-links{
+    /* height: 100vh; */
+    width: 100vw;
+    background-color: #111111;
+}
+
+.quick-links>h1{
+    color: #fff;
+    font-family: a;
+    font-size: 5rem;
+    font-weight: 100;
+    padding: 5rem 10rem;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 12rem;
+}
+
+.btn-wrapper{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    row-gap: 5rem;
+    justify-content: space-between;
+}
+
+.btn button {
+    position: relative;
+    width: 13vw;
+    height: 4rem;
+    overflow: hidden;
+    padding: 1.2rem 3rem;
+    border: none;
+    border-radius: 9999px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: #0b48ed;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 10;
+}
+.btn span{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    z-index: 20;
+    transition: color 0.3s ease;
+}
+
+.btn button::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #fff;
+    transition: top 0.3s ease;
+    z-index: 0;
+}
+
+.btn button:hover::before {
+    top: 0;
+}
+
+.btn button:hover span{
+    color: #0b48ed;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .quick-links h1{
+        font-size: 3.2rem;
+        padding: 3.5rem;
+    }
+    .btn button{
+        width: 44vw;
+    }
+    .btn-wrapper{
+        gap: 0;
+        row-gap: 2rem;
+        width: 90%;
+    }
+    .buttons{
+        padding-bottom: 6rem;
+    }
+}

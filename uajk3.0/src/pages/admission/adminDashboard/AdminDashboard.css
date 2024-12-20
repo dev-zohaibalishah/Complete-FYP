@@ -1,0 +1,49 @@
+.admin-dashboard-container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.admin-dashboard{
+    width: 90%;
+    padding: 7rem 0;
+}
+
+.ad-heading{
+    color: var(--neutral-color);
+    font-family: a;
+    font-weight: 100;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.ad-table{
+    width: 100%;
+    color: var(--neutral-color);
+    font-family: c;
+    background-color: #000000aa;
+    backdrop-filter: blur(10px);
+    /* border: 2px solid var(--neutral-color); */
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+}
+
+.ad-table a{
+    color: var(--neutral-color);
+    text-decoration: underline;
+}
+
+tr{
+    /* padding: 1rem 0; */
+    /* row-gap: 2rem; */
+    height: 5rem;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    text-align: center;
+}

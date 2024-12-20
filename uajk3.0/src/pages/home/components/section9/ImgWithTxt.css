@@ -1,0 +1,140 @@
+#section9a {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+  }
+  
+  .section9a-left {
+    height: 100%;
+    width: 40%;
+    position: relative;
+    font-family: a;
+
+  }
+  
+  .section9a-right {
+    height: 100%;
+    width: 60%;
+    position: relative;
+  }
+  
+  .section9a-left > h1 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    font-size: 5vw;
+    font-weight: 100;
+    line-height: 1.3;
+    color: var(--neutral-color);
+    padding-right: 3rem;
+  }
+  
+  .section9a-right-center {
+    height: 60%;
+    width: 85%;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("/uajk3.0/public/assets/ImgWithTxt/Virtual-Tour.jpg"); 
+    background-size: cover;
+  }
+  
+  #section9b {
+    /* height: 100vh; */
+    width: 100vw;
+    position: relative;
+  }
+  
+  .section9b-right {
+    /* height: 100%; */
+    width: 60%;
+    position: relative;
+    left: 40%;
+    padding-bottom: 10rem;
+  }
+  
+  .right9b-content {
+    /* height: 33.33%; */
+    width: 100%;
+    margin-bottom: 3rem;
+    font-family: a;
+    color: var(--neutral-color);
+  }
+  
+  .right9b-content > h3 {
+    font-size: 2.5rem;
+    font-weight: 100;
+  }
+  
+  .right9b-content > p {
+    font-size: 1.8rem;
+    font-weight: 100;
+    width: 80%;
+    color: #dadada;
+  }
+  
+
+
+
+  
+
+@media only screen and (max-width: 1367px) {
+  .section9a-left h1{
+      font-size: 4.5vw;
+  }
+  .right9b-content p{
+    font-size: 1.5rem;
+  }
+  .right9b-content h3{
+    font-size: 2.2rem;
+  }
+  .section9b-right{
+    padding-bottom: 6rem;
+  }
+}
+
+
+
+  
+
+@media only screen and (max-width: 600px) {
+  #section9a{
+    flex-direction: column;
+    height: 50vh;
+    padding-top: 2rem;
+  }
+  .section9a-left{
+    width: 100%;
+    height: 50%;
+  }
+  .section9a-right{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .section9a-right-center{
+    width: 90%;
+    height: 100%;
+  }
+  .section9a-left h1{
+    left: 10%;
+    font-size: 11vw;
+  }
+
+  .section9b-right{
+    width: 85%;
+    left: 10%;
+    padding: 3rem 0;
+  }
+  .right9b-content p{
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  .right9b-content h3{
+    width: 100%;
+    font-size: 1.8rem;
+  }
+}

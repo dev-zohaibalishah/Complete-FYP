@@ -1,0 +1,139 @@
+#section1 {
+    position: relative;
+    width: 100vw;
+    height: 87vh;
+    /* margin-top: 15vh; */
+}
+
+.bottom-section1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.bottom-section1 h1 {
+    font-family: a;
+    font-size: 5vw;
+    font-weight: 100;
+    line-height: 1;
+    color: var(--neutral-color);
+    padding-bottom: 3vw;
+    text-align: center;
+}
+
+.bottom-section1-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: a;
+    width: 100%;
+}
+
+/* 
+.bottom-section1-inner > button {
+    position: relative; 
+    overflow: hidden;
+    padding: 1.2rem 3rem;
+    border: none;
+    border-radius: 9999px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    color: #0b48ed;
+    cursor: pointer; 
+    transition: color 0.3s ease; 
+    z-index: 1;
+}
+
+.bottom-section1-inner > button::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: 'Learn More';
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    right: 0;
+    height: 100%; 
+    background-color: #000; 
+    color: var(--primary-color);
+    transition: top 0.3s ease;
+    z-index: 0; 
+}
+
+.bottom-section1-inner > button:hover::before {
+    top: 0; 
+} */
+
+.bottom-section1-inner > h4 {
+    font-size: 2vw;
+    letter-spacing: 0.1vw;
+    font-weight: 100;
+    color: var(--neutral-color);
+}
+
+
+.arrow-container {
+    position: absolute;
+    bottom: 60px; 
+    right: 50px;
+    transform: translateX(-50%);
+    cursor: pointer; 
+    z-index: 1;
+}
+
+.arrow>span{
+    color: var(--neutral-color);
+    font-weight: 100;
+    font-size: 1.5rem;
+    font-family: a;
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+}
+
+.arrow>img{
+    width: 1.8rem;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-2px);
+    }
+    50% {
+        transform: translateY(7px); 
+    }
+}
+
+
+
+@media only screen and (max-width: 1367px) {
+    .bottom-section1 h1{
+        font-size: 5.5vw;
+    }
+    .bottom-section1-inner h4{
+        font-size: 2.5vw;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .bottom-section1 h1{
+        font-size: 12vw;
+    }
+    .bottom-section1-inner h4{
+        font-size: 5.5vw;
+        text-align: center;
+    }
+    .arrow-container{
+        bottom: 40px;
+        right: -30px;
+    }
+    .arrow img{
+        width: 1.3rem;
+    }
+    .arrow span{
+        font-size: 1.2rem;
+    }
+}

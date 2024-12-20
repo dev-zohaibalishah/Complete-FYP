@@ -1,0 +1,52 @@
+#admin-offices-container{
+    overflow: visible;
+    width: 100%;
+}
+
+.secondary-nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    z-index: 4;
+
+    display: flex;
+    justify-content: center;
+  }
+  
+  .secondary-nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .secondary-nav li {
+    display: flex;
+  }
+  
+  .secondary-nav button {
+    background: none;
+    border: none;
+    color: var(--neutral-color);
+    font-family: c;
+    font-size: 1.15rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: color 0.5s ease;
+  }
+  
+  .secondary-nav button:hover {
+    color: var(--primary-color);
+  }
+  
+  .secondary-nav button:focus {
+    outline: none;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+  }
+  

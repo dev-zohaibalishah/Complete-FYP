@@ -1,0 +1,12 @@
+#section5 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+#section5 > canvas {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+}

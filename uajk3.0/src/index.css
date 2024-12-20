@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+
+@font-face {
+    font-family: a;
+    src: url(/fonts/jost-variable.ttf);
+}
+
+@font-face {
+    font-family: b;
+    src: url(/fonts/kfol.ttf);
+}
+
+@font-face {
+    font-family: c;
+    src: url(/fonts/kfom.ttf);
+}
+
+:root {
+  --primary-color: #0b48ed;
+  --secondary-color: #111111;
+  --neutral-color: #fff;
+}

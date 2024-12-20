@@ -1,0 +1,49 @@
+.admin-main-container{
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 10rem;
+}
+
+.admin-main{
+    width: 90%;
+    border: 1px solid #ffffff6b;
+    border-radius: 20px;
+    padding: 3rem;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.img-container{
+    width: 50%;
+    height: 60vh;
+}
+
+.img-container img{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 20px;
+}
+
+.admin-main-content{
+    font-family: a;
+    color: #fff;
+    padding-bottom: 1.5rem;
+}
+
+.admin-main-title>h1{
+    font-size: 4rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+
+.admin-main-details li{
+    font-size: 1.7rem;
+    list-style: none;
+    line-height: 1.8;
+}
