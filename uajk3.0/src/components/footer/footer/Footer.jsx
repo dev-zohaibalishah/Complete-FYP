@@ -47,7 +47,7 @@ const Footer = () => {
                 <hr />
                 <div className="footer-copyright">
                     <p>UAJK © All rights reserved</p>
-                    <p>Developed by: Zohaib Ali Shah & Sami Gul</p>
+                    <p>Developed by: Zohaib Ali Shah</p>
                 </div>
             </div>
         </>
