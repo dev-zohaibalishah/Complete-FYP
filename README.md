@@ -1,5 +1,3 @@
----
-
 # 🏛️ Revamping of UAJK Portal
 
 **Unveiling New Dimensions through Virtual Exploration**
@@ -56,13 +54,18 @@ One of the standout features is an immersive **3D Virtual Tour** built using **T
 
 ## 📸 Preview Screenshots
 
-* Landing Page & Hero Section
+* Hero Section
+![Hero Section Screenshot](./Screenshots/Home/Hero.png)
 * Admin & Student Dashboards
+![Admin Dashboard Screenshot](./Screenshots/Admission/Admin%20Dashboard.png)
+![Student Dashboard Screenshot](./Screenshots/Admission/Student%20Dashboard.png)
 * Virtual Tour View
+![Virtual Tour Screenshot](./Screenshots/Virtual%20Tour%20page.png)
 * Online Admission Form
+![Online Admission Form Screenshot](./Screenshots/Admission/Registeration%20Form.png)
 * News and Event Sections
-
-(*/Screenshots/Home/Hero.png*)
+![News Sections Screenshot](./Screenshots/Home/Latest%20News.png)
+![Event Sections Screenshot](./Screenshots/Home/Current%20Events.png)
 
 ---
 
@@ -142,7 +145,7 @@ This project is part of an academic submission and is currently not licensed for
 
 ## 📬 Contact
 
-* **Zohaib Ali Shah** (dev.zohaibalishah@gmail.com)
-* Email/contact info can be added here if needed
+* **Zohaib Ali Shah** 
+* dev.zohaibalishah@gmail.com
 
 ---
