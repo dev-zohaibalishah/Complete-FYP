@@ -56,8 +56,9 @@ One of the standout features is an immersive **3D Virtual Tour** built using **T
 
 * Hero Section
 ![Hero Section Screenshot](./Screenshots/Home/Hero.png)
-* Admin & Student Dashboards
+* Admin Dashboards
 ![Admin Dashboard Screenshot](./Screenshots/Admission/Admin%20Dashboard.png)
+* Admin Dashboards
 ![Student Dashboard Screenshot](./Screenshots/Admission/Student%20Dashboard.png)
 * Virtual Tour View
 ![Virtual Tour Screenshot](./Screenshots/Virtual%20Tour%20page.png)
@@ -73,8 +74,8 @@ One of the standout features is an immersive **3D Virtual Tour** built using **T
 
 ```bash
 ua jk-portal/
-├── client/                   # React frontend
-│   ├── components/           # Reusable components
+├── client/                   
+│   ├── components/           
 │   ├── pages/                # Page-level components
 │   ├── assets/               # Images & 3D assets
 │   └── ...
@@ -137,15 +138,15 @@ We also thank our teachers, classmates, and families for their support.
 
 ---
 
-## 📃 License
-
-This project is part of an academic submission and is currently not licensed for commercial use. Contact for permission.
-
----
-
 ## 📬 Contact
 
 * **Zohaib Ali Shah** 
 * dev.zohaibalishah@gmail.com
+
+---
+
+## 📃 License
+
+This project is part of an academic submission and is currently not licensed for commercial use. Contact for permission.
 
 ---
